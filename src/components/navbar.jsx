@@ -142,7 +142,7 @@ const Navbar = () => {
               src={logo}
               alt="Amy's Nail Salon and Spa"
             />
-            <span className="navbar__brand-text">Amy's</span>
+            <span className="navbar__brand-text">Amy's Nails Salon & Spa</span>
           </NavLink>
 
           <nav className="navbar__nav" aria-label="Primary">

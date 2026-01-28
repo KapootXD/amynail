@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar.jsx";
+import Layout from "./components/Layout.jsx";
 
 const Placeholder = ({ title }) => {
   return (
@@ -12,17 +12,16 @@ const Placeholder = ({ title }) => {
 
 const App = () => {
   return (
-    <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Placeholder title="Home" />} />
+    <Routes>
+      <Route element={<Layout />}>
+        <Route index element={<Placeholder title="Home" />} />
         <Route path="/services" element={<Placeholder title="Services" />} />
         <Route path="/gallery" element={<Placeholder title="Gallery" />} />
         <Route path="/booking" element={<Placeholder title="Booking" />} />
         <Route path="/policy" element={<Placeholder title="Policy" />} />
         <Route path="/contact" element={<Placeholder title="Contact" />} />
-      </Routes>
-    </>
+      </Route>
+    </Routes>
   );
 };
 
