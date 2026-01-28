@@ -1,4 +1,4 @@
-import "./Footer.css";
+import "../styles/Footer.css";
 
 const PHONE_DISPLAY = "(337) 517-3832";
 const PHONE_LINK = "+13375173832";
